@@ -13,7 +13,7 @@ https://github.com/SWEN900072023/SDA1/blob/main/docs/Part4/Part4_Performance_Dis
 
 
 
-## datasample:
+## data sample:
 Part2:
 <br>[Test method with datasample](https://github.com/SWEN900072023/SDA1/blob/main/docs/datasample/Part2_TestandDataSample.pdf)  <br>
 <br>[Database structue and records](https://github.com/SWEN900072023/SDA1/blob/main/docs/datasample/databaseStructureandRecords.pdf)<br>
@@ -22,7 +22,7 @@ Part3:
 
 <br>[Database structure](docs/datasample/Database_structure_Part3.pdf)<br>
 
-## Users for test
+## login credentials
 |  username   | password  |userRole|
 |  ----  | ----  | ----  |
 | admin  | admin |Admin|
