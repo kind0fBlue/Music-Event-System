@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+<!--    <security-role>-->
+<!--        <role-name>Admin</role-name>-->
+<!--    </security-role>-->
+<!--    <security-role>-->
+<!--        <role-name>User</role-name>-->
+<!--    </security-role>-->
+<!--    <security-role>-->
+<!--        <role-name>EventPlanner</role-name>-->
+<!--    </security-role>-->
+
+<!--    <security-constraint>-->
+<!--        <web-resource-collection>-->
+<!--            <web-resource-name>Protected Resource</web-resource-name>-->
+<!--            <url-pattern>/updateEvent.jsp</url-pattern>-->
+<!--        </web-resource-collection>-->
+<!--        <auth-constraint>-->
+<!--            <role-name>EventPlanner</role-name>-->
+<!--        </auth-constraint>-->
+<!--    </security-constraint>-->
+
+<!--    <security-constraint>-->
+<!--        <web-resource-collection>-->
+<!--            <web-resource-name>adminAuthorization</web-resource-name>-->
+<!--            <url-pattern>/createuseraccount.jsp</url-pattern>-->
+<!--            <http-method>GET</http-method>-->
+<!--            <url-pattern>/viewuser.jsp</url-pattern>-->
+<!--            <http-method>GET</http-method>-->
+<!--            <url-pattern>/loginloading.jsp</url-pattern>-->
+<!--            <http-method>GET</http-method>-->
+<!--        </web-resource-collection>-->
+<!--        <auth-constraint>-->
+<!--            <role-name>Admin</role-name>-->
+<!--        </auth-constraint>-->
+<!--    </security-constraint>-->
+
+<!--    <security-constraint>-->
+<!--        <web-resource-collection>-->
+<!--            <web-resource-name>userAuthorization</web-resource-name>-->
+<!--            <url-pattern>/viewevents.jsp</url-pattern>-->
+<!--            <http-method>GET</http-method>-->
+<!--        </web-resource-collection>-->
+<!--        <auth-constraint>-->
+<!--            <role-name>User</role-name>-->
+<!--        </auth-constraint>-->
+<!--    </security-constraint>-->
+
+
+<!--    <login-config>-->
+<!--        <auth-method>FORM</auth-method>-->
+<!--        <form-login-config>-->
+<!--            <form-login-page>/login.jsp</form-login-page>-->
+<!--           <form-error-page>/ErrorPages/error.jsp</form-error-page>-->
+<!--        </form-login-config>-->
+<!--    </login-config>-->
+<!--    <error-page>-->
+<!--        <error-code>403</error-code>-->
+<!--        <location>/ErrorPages/denied.jsp</location>-->
+<!--    </error-page>-->
+<!--    <description>postgresql conn pool</description>-->
+<!--    <resource-ref>-->
+<!--        <description>DB Connection</description>-->
+<!--        <res-ref-name>jdbc/mydb</res-ref-name>-->
+<!--        <res-type>javax.sql.DataSource</res-type>-->
+<!--        <res-auth>Container</res-auth>-->
+<!--    </resource-ref>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>ViewEventServlet</servlet-name>-->
+<!--        <servlet-class>com.unimelb.swen90007.sda1_musicsystem.ViewEventServlet</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>ViewEventServlet</servlet-name>-->
+<!--        <url-pattern>/ViewEvent</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+
+<!--    <servlet>-->
+<!--        <servlet-name>AssignEventServlet</servlet-name>-->
+<!--        <servlet-class>com.unimelb.swen90007.sda1_musicsystem.AssignEventServlet</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>AssignEventServlet</servlet-name>-->
+<!--        <url-pattern>/AssignEvent</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+
+    <servlet>
+        <servlet-name>TestTriggerAddServlet</servlet-name>
+        <servlet-class>com.unimelb.swen90007.sda1_musicsystem.TestTriggerAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestTriggerAddServlet</servlet-name>
+        <url-pattern>/triggertestAdd</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>TestTriggerUpdateServlet</servlet-name>
+        <servlet-class>com.unimelb.swen90007.sda1_musicsystem.TestTriggerUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestTriggerUpdateServlet</servlet-name>
+        <url-pattern>/triggertestUpdate</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>TestTriggerAddUpdateServlet</servlet-name>
+        <servlet-class>com.unimelb.swen90007.sda1_musicsystem.TestTriggerAddUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestTriggerAddUpdateServlet</servlet-name>
+        <url-pattern>/triggertestAddUpdate</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
