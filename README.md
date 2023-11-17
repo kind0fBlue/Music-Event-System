@@ -1,4 +1,4 @@
-# SDA1
+# Music Event System
 Link to deployed app:
 https://nine0007-1b.onrender.com/musicsystem1017/login
 
